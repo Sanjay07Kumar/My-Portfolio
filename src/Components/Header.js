@@ -6,41 +6,50 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
     
   return (
-    <div className="Main-page">
-        {/* <div className='homepage-fit'> */}
-         {/* Top Navbar */}
+    <div className="fixed z-10 h-[70px] w-full bg-[#E0E0DF]">
          
-            <div className="home-top1" fixed="top">
-              
-              <h3 className="home-top1-h3">Portfolio | Sanjay</h3>
-              {/* Use a button instead of <a> for accessibility */}
+            <div className={`${menuOpen? "hidden" :"flex"} px-5 w-full h-16 justify-between items-center`}>
+              <h3 className="">
+                Portfolio | Sanjay
+              </h3>
+
               <button
                 onClick={() => setMenuOpen(true)}
-                className="menu-icon"
                 aria-label="Open menu"
                 style={{ background: "none", border: "none" }}
               >
-              <HiMenu color="black" size={40}/>
+                <HiMenu color="black" size={30} />
               </button>
             </div>
 
-            {/* Fullscreen Menu Overlay */}
             {menuOpen && (
-            <div className="menu-overlay">
-                <button className="close-menu" onClick={() => setMenuOpen(false)} aria-label="Close menu">
-                  <HiX size={35} />
-                </button>
-                
-                <h2>Menu</h2>
-                
-                <ul className="menu-items">
-                  <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-                  <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-                  <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-                  <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
-                </ul>
-            </div>
+              <div className="fixed inset-0 w-full h-full bg-blue-200 ">
+
+                <div className="flex justify-end p-5">
+                  <button 
+                    onClick={() => setMenuOpen(false)} 
+                    aria-label="Close menu"
+                    className="cursor-pointer"
+                  >
+                    <HiX size={40} />
+                  </button>
+                </div>
+
+                <div className="flex flex-col items-center justify-center space-y-10">
+                  <h2 className="text-4xl font-bold">Menu</h2>
+
+                  <ul className="flex flex-col items-center text-3xl space-y-6">
+                    <li><a className="no-underline hover:text-blue-600" href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+                    <li><a className="no-underline hover:text-blue-600" href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+                    <li><a className="no-underline hover:text-blue-600" href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+                    <li><a className="no-underline hover:text-blue-600" href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+                  </ul>
+                </div>
+
+              </div>
             )}
+
+
             </div>
 );
 }

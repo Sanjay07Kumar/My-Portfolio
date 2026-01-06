@@ -14,8 +14,8 @@ const BackButton = () => {
     }
   };
   return (
-    <button onClick={handleBack} className="button-back">
-      <FaArrowLeft/>
+    <button onClick={handleBack} className="fixed py-2 mt-2 text-700 z-50 hover:text-gray-500">
+      <FaArrowLeft size={25}/>
     </button>
   );
 };
