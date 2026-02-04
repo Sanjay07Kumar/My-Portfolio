@@ -1,38 +1,41 @@
 /* -------------------------------------------------------------------------- */
-/* 1. Base Styles & Custom Fonts */
+/* 1. Import Google Font FIRST */
 /* -------------------------------------------------------------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Roboto:wght@100;400&display=swap');
-/* Ensure you have an equivalent import for 'Roboto' if needed */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* -------------------------------------------------------------------------- */
+/* 2. Force Jost font on ALL elements */
+/* -------------------------------------------------------------------------- */
 @layer base {
-  /* Global body/html styles */
+  /* Apply to all elements */
+  * {
+    font-family: 'Jost', sans-serif;
+  }
+  
+  /* Specific body/html styling */
   body, html {
-    @apply bg-[rgb(199,197,197)] overflow-x-hidden font-jost;
+    @apply bg-[rgb(199,197,197)] overflow-x-hidden;
   }
 }
 
 /* -------------------------------------------------------------------------- */
-/* 2. Custom Components (Offset Underline, Timeline, Images, Scroll Snap) */
+/* 3. Custom Components */
 /* -------------------------------------------------------------------------- */
-
 @layer components {
-  
   /* Scroll Snap Configuration */
   .scroll-container {
-  @apply h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth;
-}
+    @apply h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth;
+  }
 
-.page-section {
-  @apply min-h-screen snap-start;
-}
+  .page-section {
+    @apply min-h-screen snap-start;
+  }
 
-
-  /* Custom Double Underline (used on all section titles) */
+  /* Custom Double Underline */
   .offset-underline {
     @apply inline-block relative;
   }
@@ -40,65 +43,57 @@
   .offset-underline::before,
   .offset-underline::after {
     content: "";
-    @apply absolute h-1 rounded-full bg-black w-[55px] sm:w-[55px] md:w-[110px];
+    @apply absolute h-1 rounded-full bg-[rgb(34,59,79)] w-[55px] sm:w-[55px] md:w-[110px];
   }
 
   .offset-underline::before {
-    @apply bottom-0 left-0;
+    @apply bottom-[-10px] left-0;
   }
 
   .offset-underline::after {
-    @apply bottom-[-10px] left-[40px] md:bottom-[-15px] md:left-[60px];
+    @apply bottom-[-15px] left-[40px] md:bottom-[-25px] md:left-[60px];
   }
 
-  /* About Section Image Hover Effect (used on .about-row2-pic) */
+  /* About Section Image Hover Effect */
   .about-row2-pic {
     @apply filter grayscale transition-all duration-300 ease-in-out object-cover z-10;
   }
+  
   .about-row2-pic:hover {
     @apply transform scale-[1.1] shadow-xl rounded-xl grayscale-0 brightness-100 z-20;
   }
   
-  /* Education Timeline Vertical Line (used on .education-left) */
+  /* Education Timeline */
   .education-left {
-    /* This uses a border-image to create the gradient, which must remain as custom CSS */
     border-right: 4px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to bottom, #6b6868, #9f979b, #839295, #767474, #918189, #7c7878, #6f6c6c, #918189, #909292); 
     @apply pb-10;
   }
+}
 
-  /* Education Timeline Node (used on .node) */
-  /* .node {
-    /* This creates the circle on the line, must remain custom */
-    /* @apply absolute transform -translate-x-1/2 h-[15px] w-[15px] bg-[#4e4c4c] border-2 border-white rounded-full z-10;
-  }  */
-
-
-  @layer utilities {
+/* -------------------------------------------------------------------------- */
+/* 4. Custom Utilities */
+/* -------------------------------------------------------------------------- */
+@layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+  
   .no-scrollbar {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* 5. Custom Components */
+/* -------------------------------------------------------------------------- */
 @layer components {
   .pill-button {
-    @apply
-      font-jost
-      bg-gradient-to-r from-white via-gray-300 to-gray-200
-      rounded-full
-      px-3 py-1
-      sm:px-4 sm:py-2
-      md:px-5 md:py-2
-      text-xs sm:text-sm md:text-lg
-      whitespace-nowrap
-      transition-all duration-300
-      hover:scale-105;
+    @apply bg-gradient-to-r from-white via-gray-300 to-gray-200
+           rounded-full px-3 py-1 sm:px-4 sm:py-2 md:px-5 md:py-2
+           text-xs sm:text-sm md:text-sm whitespace-nowrap
+           transition-all duration-300 hover:scale-105;
   }
-}
-
 }
