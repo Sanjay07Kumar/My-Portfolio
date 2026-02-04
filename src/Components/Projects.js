@@ -1,5 +1,3 @@
-import BackButton from "./BackButton";
-
 import 'aos/dist/aos.css';
 import Iot1 from './ScreenShots/iot1.jpg';
 import Iot2 from './ScreenShots/iot2.jpg';
@@ -29,7 +27,6 @@ const Projects = () => {
 
     <>
       <Container style={{ maxWidth: '100%' }} className="about-container">
-        <BackButton />
         <div className="page-section">
           <Row className='h-screen flex flex-col items-center justify-center'>
 

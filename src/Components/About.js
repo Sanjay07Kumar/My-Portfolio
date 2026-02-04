@@ -1,4 +1,3 @@
-import BackButton from './BackButton';
 
 import AboutSectionPic1 from './Assets/about-section-picc.jpg';
 import AboutSectionPic2 from './Assets/about-section-pi.jpg';
@@ -24,7 +23,6 @@ const About = () => {
 
     <>
       <Container style={{ maxWidth: '100%' }} className="about-container">
-        <BackButton />
 
         <div className='page-section'>
 
