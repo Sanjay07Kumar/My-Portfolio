@@ -321,7 +321,7 @@ const About = () => {
           </div>
 
 
-          <div className='flex flex-col justify-self-center bg-[#e6e6e6] rounded-[30px] w-[95%] h-auto gap-10 py-'>
+          <div className='flex flex-col justify-self-center bg-[#e6e6e6] rounded-[30px] w-[95%] h-auto gap-10 py-4'>
             <h1 className='text-center font-jost font-medium text-[20px] md:text-[30px] lg:text-[30px] text-black'>Languages & Frameworks</h1>
             <div className="flex justify-center items-center w-full ">
 
