@@ -9,7 +9,6 @@ import MainPic from './Assets/about-section.jpg';
 import Ocean1 from './Assets/ocean1.jpg';
 import Ocean2 from './Assets/ocean2.jpg';
 import Ocean3 from './Assets/ocean3.jpg';
-
 import Estate from './Assets/meinestate.jpg';
 import { Container, Row, Col } from "react-bootstrap";
 import { Brain, Server, Medal, Trophy, Award, Smartphone } from "lucide-react";

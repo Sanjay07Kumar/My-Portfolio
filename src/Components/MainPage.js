@@ -30,8 +30,7 @@ const MainPage = () => {
           <Row className="h-screen w-full">
 
             <Col xs={{ order: 2 }} md={{ span: 7, order: 1 }}
-              className="lg:ml-[100px] flex flex-col items-center text-center md:items-start md:text-start lg:justify-center space-y-5">
-
+              className="flex flex-col items-center text-center md:items-start md:text-start lg:ml-[100px] lg:justify-center space-y-5">
               <h1 className="text-[20px] sm:text-[40px] md:text-[40px] lg:text-[30px] tracking-widestt">S A N J A Y &nbsp; K U M A R</h1>
 
               <h1 className="text-[30px] sm:text-[23px] md:text-[40px] lg:text-[70px] text-black font-black text-center md:text-start whitespace-nowrap">Full Stack Developer</h1>
