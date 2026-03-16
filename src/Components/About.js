@@ -241,7 +241,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-1 sm:p-3 md:p-5
+              p-2 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -251,7 +251,7 @@ const About = () => {
               <h3 className="text-base sm:text-lg md:text-xl text-black font-medium">
                 Web Development
               </h3>
-              <p className=" text-[12px] md:text-[20px]">
+              <p className=" text-xs sm:text-sm md:text-lg">
                 Building modern, responsive web applications.
               </p>
             </button>
@@ -262,7 +262,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-1 sm:p-3 md:p-5
+              p-2 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -283,7 +283,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-1 sm:p-3 md:p-5
+              p-2 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -304,7 +304,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-1 sm:p-3 md:p-5
+              p-2 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -321,7 +321,7 @@ const About = () => {
           </div>
 
 
-          <div className='flex flex-col justify-self-center bg-[#e6e6e6] rounded-[30px] w-[95%] h-auto gap-10 py-4'>
+          <div className='flex flex-col justify-self-center bg-[#e6e6e6] rounded-[30px] w-[95%] h-auto gap-10 py-'>
             <h1 className='text-center font-jost font-medium text-[20px] md:text-[30px] lg:text-[30px] text-black'>Languages & Frameworks</h1>
             <div className="flex justify-center items-center w-full ">
 
