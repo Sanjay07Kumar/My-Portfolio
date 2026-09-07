@@ -7,15 +7,19 @@ import Exsell1 from './ScreenShots/Exsell1.png';
 import Exsell2 from './ScreenShots/Exsell2.png';
 import Exsell3 from './ScreenShots/Exsell3.png';
 
-
-import Finance1 from './ScreenShots/aifinance1.png';
-import Finance2 from './ScreenShots/aifinance2.png';
-import Finance3 from './ScreenShots/aifinance3.png';
-import Finance4 from './ScreenShots/aifinance4.png';
+import aiFinance1 from './ScreenShots/aifinance1.png';
+import aiFinance2 from './ScreenShots/aifinance2.png';
+import aiFinance3 from './ScreenShots/aifinance3.png';
+import aiFinance4 from './ScreenShots/aifinance4.png';
 
 import Employee1 from './ScreenShots/Employee-1.png';
 import Employee2 from './ScreenShots/Employee-2.png';
 import Employee3 from './ScreenShots/Employee-3.png';
+
+import Finance1 from './ScreenShots/finance1.png';
+import Finance2 from './ScreenShots/finance2.png';
+import Finance3 from './ScreenShots/finance3.png';
+import Finance4 from './ScreenShots/finance4.png';
 
 
 
@@ -27,8 +31,9 @@ import AutoSlideShow from "./AutoSlideShow";
 import Footer from "./Footer";
 const excellImages = [Exsell1, Exsell2, Exsell3];
 const employeeImages = [Employee1, Employee2, Employee3];
-const aiFinance = [Finance1, Finance2, Finance3, Finance4];
 const iotImages = [Iot1, Iot2, Iot3];
+const aiFinanceImages = [aiFinance1, aiFinance2, aiFinance3, aiFinance4];
+const FinanceImages = [Finance1, Finance2, Finance3, Finance4];
 const Projects = () => {
 
   return (
@@ -156,18 +161,98 @@ const Projects = () => {
 
 
 
-          <div className=" md:mt-0 mx-auto flex items-center">
+         <div className="mx-auto flex items-center">
+  <Row className="w-full mx-auto items-stretch flex">
+    <Col
+      xs={{ order: 1 }}
+      md={{ span: 6, order: 1 }}
+      className="
+        w-full
+        md:w-1/2
+        flex
+        flex-col
+        items-center
+        justify-center
+        text-center
+      "
+    >
+      <div className="w-full md:w-[90%] max-w-[800px] flex flex-col items-center gap-4">
+        <h2 className="text-black font-bold text-[20px] md:text-[25px] lg:text-[25px] w-full text-start">
+          F i n a n c e &nbsp; M a n a g e m e n t
+        </h2>
 
+        <div className="w-full">
+          <p className="text-[rgb(96,93,93)] text-[15px] md:text-[18px] lg:text-[18px] leading-relaxed text-justify">
+            Developed a full-stack{" "}
+            <span className="text-black font-semibold">
+              Finance Management System
+            </span>{" "}
+            designed to help users efficiently track and manage their personal
+            finances. The application provides secure{" "}
+            <span className="text-black font-semibold">
+              user authentication and authorization
+            </span>
+            , allowing users to record, update, and monitor their income and
+            expenses through an intuitive interface. It includes dedicated
+            modules for{" "}
+            <span className="text-black font-semibold">
+              transactions, categories, budgets, reports, and profile management
+            </span>
+            , enabling users to organize spending habits and make informed
+            financial decisions. The system integrates a responsive{" "}
+            <span className="text-black font-semibold">React.js frontend</span>{" "}
+            with a robust{" "}
+            <span className="text-black font-semibold">
+              Spring Boot backend
+            </span>{" "}
+            and RESTful APIs for reliable data communication. This project
+            demonstrates expertise in full-stack development, database
+            integration, secure API design, responsive UI development, and
+            financial data management.
+          </p>
+        </div>
+      </div>
+    </Col>
+
+    <Col
+      xs={{ order: 2 }}
+      md={{ span: 6, order: 2 }}
+      className="
+        flex
+        w-full
+        md:w-1/2
+        items-center
+        justify-center
+      "
+    >
+      <div
+        className=" 
+          relative
+          w-full
+          md:w-[80%]
+          max-w-[500px]
+          h-3/2
+          md:h-[500px]
+          flex
+          items-center
+          justify-center
+          mx-auto
+        "
+      >
+        <AutoSlideShow images={FinanceImages} />
+      </div>
+    </Col>
+  </Row>
+</div>
+
+
+          <div className=" md:mt-0 mx-auto flex items-center">
             <Row className="w-full mx-auto items-stretch flex">
-              <Col xs={{ order: 2 }} md={{ span: 6, order: 1 }}
-                className="w-full
-                  md:w-1/2
-                  flex
-                  flex-col
-                  items-center
-                  justify-center
-                  text-center
-            ">
+              <Col
+                xs={{ order: 2 }}
+                md={{ span: 6, order: 1 }}
+                className="w-full md:w-1/2 flex flex-col items-center justify-center text-center"
+              >
                 <div
                   className="
                   relative
@@ -181,7 +266,7 @@ const Projects = () => {
                   justify-center
                   mx-auto
                 ">
-                  <AutoSlideShow images={aiFinance} />
+                  <AutoSlideShow images={employeeImages} />
                 </div>
               </Col>
 
@@ -235,36 +320,54 @@ const Projects = () => {
                   justify-center
                   mx-auto
                 ">
-                  <AutoSlideShow images={employeeImages} />
+                  <AutoSlideShow images={aiFinanceImages} />
                 </div>
               </Col>
 
-              <Col xs={{ order: 1 }} md={{ span: 6, order: 2 }}
+              <Col
+                xs={{ order: 1 }}
+                md={{ span: 6, order: 2 }}
                 className="
-                  w-full
-                  md:w-1/2
-                  flex
-                  flex-col
-                  items-center
-                  justify-center
-                  text-center
-                ">
+        w-full
+        md:w-1/2
+        flex
+        flex-col
+        items-center
+        justify-center
+        text-center
+      "
+              >
                 <div className="w-full md:w-[90%] max-w-[800px] flex flex-col items-center">
                   <h2 className='text-black font-bold text-[20px] md:text-[25px] lg:text-[25px] w-full text-start'>
-                    M a n a g e &nbsp;E m p l o y e e
+                    A I &nbsp; E x p e n s e &nbsp; A u d i t o r
                   </h2>
+
                   <div className="text-justify">
                     <p className='text-[rgb(96,93,93)] text-[15px] md:text-[18px] lg:text-[18px] leading-relaxed text-justify'>
-                      Engineered a comprehensive <span className='text-black font-semibold'>Employee Management System</span> designed to optimize workforce administration through complete automation of <span className='text-black font-semibold'>CRUD operations</span>. The application delivers an intuitive user experience via a responsive <span className='text-black font-semibold'>React.js frontend</span> while maintaining enterprise-grade reliability through a robust <span className='text-black font-semibold'>Spring Boot backend</span>. Implementing a clean, scalable <span className='text-black font-semibold'>layered architecture</span> ensures proper separation of concerns between presentation, business logic, and data access layers. This full-stack solution centralizes all employee data management—from recruitment to role assignment and performance tracking—while providing secure API endpoints and efficient database interactions. The system demonstrates proficiency in building maintainable, production-ready applications that address complex organizational needs with optimized performance and future scalability in mind.
+                      Engineered an intelligent
+                      <span className='text-black font-semibold'> AI Expense Auditor </span>
+                      designed to detect fraudulent, duplicate, and anomalous financial activity
+                      across invoices, reimbursements, and procurement records. The platform
+                      combines a responsive 
+                      <span className='text-black font-semibold'> React.js frontend </span>
+                      with a robust 
+                      <span className='text-black font-semibold'> Spring Boot backend </span>
+                      and a Python-powered 
+                      <span className='text-black font-semibold'> machine learning engine </span>
+                      to automate risk analysis in real time. Built with a clean, scalable
+                      <span className='text-black font-semibold'> layered architecture</span>,
+                      the application ingests transactional data, evaluates each record against
+                      rule-based checks and statistical models, and highlights suspicious spending
+                      patterns before they escalate. From vendor anomalies and duplicate billing
+                      to split transactions and Benford’s Law deviations, the system delivers
+                      actionable audit insights with secure API workflows and enterprise-grade
+                      financial oversight.
                     </p>
                   </div>
                 </div>
               </Col>
             </Row>
           </div>
-
-
-
           <div className="mx-auto flex items-center">
             <Row className="w-full mx-auto items-stretch flex">
               <Col
