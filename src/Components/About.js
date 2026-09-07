@@ -241,7 +241,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-2 sm:p-3 md:p-5
+              p-3 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -262,7 +262,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-2 sm:p-3 md:p-5
+              p-3 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -283,7 +283,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-2 sm:p-3 md:p-5
+              p-3 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -304,7 +304,7 @@ const About = () => {
               bg-[rgb(227,227,227)]
               ///////////////////////////////////////////////////////////onclick la bg-[rgba(233,232,232,1)]
               border-2 rounded-[16px]
-              p-2 sm:p-3 md:p-5
+              p-3 sm:p-3 md:p-5
               flex flex-col items-center text-center
               transition hover:scale-[1.03]
             `}
@@ -543,7 +543,7 @@ const About = () => {
                       Problem Solving
                     </h1>
                     <p className="text-[12px] md:text-[14px]">
-                      Solved 220+ problems in Leetcode, improving problem solving.
+                      Solved 350+ problems in Leetcode, improving problem solving.
                     </p>
                     <span className="text-[8px] md:text-[12px] text-gray-500">
                       Present

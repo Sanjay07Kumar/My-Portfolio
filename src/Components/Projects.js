@@ -7,9 +7,16 @@ import Exsell1 from './ScreenShots/Exsell1.png';
 import Exsell2 from './ScreenShots/Exsell2.png';
 import Exsell3 from './ScreenShots/Exsell3.png';
 
+
+import Finance1 from './ScreenShots/aifinance1.png';
+import Finance2 from './ScreenShots/aifinance2.png';
+import Finance3 from './ScreenShots/aifinance3.png';
+import Finance4 from './ScreenShots/aifinance4.png';
+
 import Employee1 from './ScreenShots/Employee-1.png';
 import Employee2 from './ScreenShots/Employee-2.png';
 import Employee3 from './ScreenShots/Employee-3.png';
+
 
 
 import ProjectPic from './Assets/project-pic.jpg';
@@ -20,6 +27,7 @@ import AutoSlideShow from "./AutoSlideShow";
 import Footer from "./Footer";
 const excellImages = [Exsell1, Exsell2, Exsell3];
 const employeeImages = [Employee1, Employee2, Employee3];
+const aiFinance = [Finance1, Finance2, Finance3, Finance4];
 const iotImages = [Iot1, Iot2, Iot3];
 const Projects = () => {
 
@@ -173,6 +181,60 @@ const Projects = () => {
                   justify-center
                   mx-auto
                 ">
+                  <AutoSlideShow images={aiFinance} />
+                </div>
+              </Col>
+
+              <Col xs={{ order: 1 }} md={{ span: 6, order: 2 }}
+                className="
+                  w-full
+                  md:w-1/2
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  text-center
+                ">
+                <div className="w-full md:w-[90%] max-w-[800px] flex flex-col items-center">
+                  <h2 className='text-black font-bold text-[20px] md:text-[25px] lg:text-[25px] w-full text-start'>
+                    F i n a n c e &nbsp;M a n a g e r
+                  </h2>
+                  <div className="text-justify">
+                    <p className='text-[rgb(96,93,93)] text-[15px] md:text-[18px] lg:text-[18px] leading-relaxed text-justify'>
+                      Engineered a comprehensive <span className='text-black font-semibold'>Employee Management System</span> designed to optimize workforce administration through complete automation of <span className='text-black font-semibold'>CRUD operations</span>. The application delivers an intuitive user experience via a responsive <span className='text-black font-semibold'>React.js frontend</span> while maintaining enterprise-grade reliability through a robust <span className='text-black font-semibold'>Spring Boot backend</span>. Implementing a clean, scalable <span className='text-black font-semibold'>layered architecture</span> ensures proper separation of concerns between presentation, business logic, and data access layers. This full-stack solution centralizes all employee data management—from recruitment to role assignment and performance tracking—while providing secure API endpoints and efficient database interactions. The system demonstrates proficiency in building maintainable, production-ready applications that address complex organizational needs with optimized performance and future scalability in mind.
+                    </p>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+
+          <div className=" md:mt-0 mx-auto flex items-center">
+
+            <Row className="w-full mx-auto items-stretch flex">
+              <Col xs={{ order: 2 }} md={{ span: 6, order: 1 }}
+                className="w-full
+                  md:w-1/2
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  text-center
+            ">
+                <div
+                  className="
+                  relative
+                  w-[80%]      /* Adjust width as needed */
+                  max-w-[500px] /* Maximum width */
+                  h-fit    /* Adjust height as needed */
+                  md:h-[500px]
+                  lg:h-[500px]
+                  flex
+                  items-center
+                  justify-center
+                  mx-auto
+                ">
                   <AutoSlideShow images={employeeImages} />
                 </div>
               </Col>
@@ -200,6 +262,7 @@ const Projects = () => {
               </Col>
             </Row>
           </div>
+
 
 
           <div className="mx-auto flex items-center">
